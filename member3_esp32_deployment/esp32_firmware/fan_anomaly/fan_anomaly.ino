@@ -1,7 +1,7 @@
 // Member 3 -- ESP32 fan anomaly detector (Member 2 autoencoder, float forward pass).
 // Receives 200x3 samples over USB serial, computes raw MAD, runs the model, shows result on LCD.
 // Libraries: LiquidCrystal_I2C (Frank de Brabander). Set USE_LCD 0 to run serial-only.
-#define USE_LCD 1
+#define USE_LCD 0
 #include "fan_core.h"
 #if USE_LCD
 #include <Wire.h>
